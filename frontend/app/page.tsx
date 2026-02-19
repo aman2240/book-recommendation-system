@@ -35,7 +35,7 @@ export default function Home() {
 
     try {
       const res = await fetch(
-        `https://book-recommendation-system-0h3h.onrender.com/query=${encodeURIComponent(
+        `https://book-recommendation-system-0h3h.onrender.com/search?query=${encodeURIComponent(
           selectedBook
         )}`
       );
