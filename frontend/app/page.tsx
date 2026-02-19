@@ -19,7 +19,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchBooks = async () => {
-      const res = await fetch("http://localhost:8000/books");
+      const res = await fetch("https://book-recommendation-system-0h3h.onrender.com/books");
       const data = await res.json();
       setBooks(data);
     };
@@ -35,7 +35,7 @@ export default function Home() {
 
     try {
       const res = await fetch(
-        `http://localhost:8000/recommend?title=${encodeURIComponent(
+        `https://book-recommendation-system-0h3h.onrender.com/recommend?title=${encodeURIComponent(
           selectedBook
         )}`
       );

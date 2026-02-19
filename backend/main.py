@@ -11,7 +11,7 @@ app = FastAPI(title="Book Recommendation API")
 # --------------------------------------------------
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["https://book-recommendation-system-1-xclg.onrender.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
